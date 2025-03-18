@@ -3,7 +3,7 @@ defmodule PhoenixAnalytics.Queries.Table do
   alias PhoenixAnalytics.Services.Utility
 
   @db_alias "postgres_db"
-  @requests if Utility.mode() == :duck_postgres, do: "#{@db_alias}.requests", else: "requests"
+  @requests "requests"
 
   def name() do
     @requests
