@@ -3,7 +3,7 @@ defmodule PhoenixAnalytics.Queries.Table do
   alias PhoenixAnalytics.Services.Utility
 
   @db_alias "postgres_db"
-  @requests "requests"
+  @requests "public.requests"
 
   def name() do
     @requests
